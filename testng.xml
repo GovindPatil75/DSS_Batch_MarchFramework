@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
+<listeners>
+<listener class-name="Com.Utility.Listeners"></listener>
+</listeners>
   <test thread-count="5" name="Test_Chrome">
   <parameter name="BrowserName" value="Chrome"></parameter>
     <classes>
